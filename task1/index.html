@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Preferred Mode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <div class="container-header1">
+      <header class="header-awal">
+        Choose Your Preferred Mode
+      </header>
+      <button id="darkBtn" class="dark">
+        Dark Mode
+      </button>
+      <button id="lightBtn" class="light">
+        Light Mode
+      </button>
+    </div>
+
+    <section class="container-img1">
+      <img src="https://media.tenor.com/zuMGg-gGkLAAAAAM/pochacco.gif" class="silly1" alt="Pochacco animasi">
+      <img src="https://media.tenor.com/c04ddP--r7IAAAAM/sanrio-sanrio-characters.gif" class="silly2" alt="Sanrio characters animasi">
+    </section>
+
+    <header class="line1">
+      _______________________________________________________
+    </header>
+
+    <section class="container-header2">
+      <p class="name">
+        Name: Yohanes Nicholas Setiawan
+      </p>
+      <p class="bio">
+        Bio:
+        <br>
+        I'm a college student passionate about technology, currently diving into web development.
+        <br>
+        I enjoy building things from scratch and figuring out how the web works under the hood from how a page looks to how it actually functions.
+      </p>
+      <p class="skills">
+        Skills I plan to learn:
+        <br>
+        - HTML &amp; CSS
+        <br>
+        - Git &amp; GitHub
+        <br>
+        - JavaScript &amp; PHP
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const darkBtn = document.getElementById('darkBtn');
+    const lightBtn = document.getElementById('lightBtn');
+
+    darkBtn.addEventListener('click', () => {
+      document.body.style.backgroundColor = '#000000';
+      document.body.style.color = '#ffffff';
+    });
+
+    lightBtn.addEventListener('click', () => {
+      document.body.style.backgroundColor = '#ffffff';
+      document.body.style.color = '#000000';
+    });
+  </script>
+
+</body>
+</html>
